@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@layer base {
+    :root {
+        /* Primary */
+        --dark-cyan: 185 75% 39%;
+        --very-dark-desaturated-blue: 229 23% 23%;
+        --dark-grayish-blue: 227 10% 46%;
+
+        /* Neutral */
+        --dark-gray: 0 0% 59%;
+    }
+
+    body {
+        background-image: url(../images/bg-pattern-top.svg),
+            url(../images/bg-pattern-bottom.svg);
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+        background-size: 50rem 50rem;
+    }
+}

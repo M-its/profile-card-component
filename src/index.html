@@ -13,20 +13,10 @@
         <link href="/dist/output.css" rel="stylesheet" />
 
         <title>Frontend Mentor | Profile card component</title>
-
-        <style>
-            body {
-                font-size: 18px;
-                background-image: url(../images/bg-pattern-top.svg),
-                    url(../images/bg-pattern-bottom.svg);
-                background-repeat: no-repeat;
-                background-position: right 48vw bottom 40vh, left 45vw top 44vh;
-                background-color: var(--DarkCyan);
-                font-family: "Kumbh Sans", sans-serif;
-            }
-        </style>
     </head>
-    <body class="h-screen flex flex-col items-center justify-center">
+    <body
+        class="h-screen flex flex-col items-center justify-center font-kumbh-sans bg-dark-cyan bg-no-repeat"
+    >
         <main
             class="w-[330px] flex flex-col items-center bg-white rounded-2xl overflow-hidden shadow-lg shadow-bright-blue/10 z-0 m-auto"
         >
@@ -43,8 +33,6 @@
                     src="../images/image-victor.jpg"
                     alt=""
                 />
-            </section>
-            <section>
                 <h1 class="inline">Victor Crest</h1>
                 <span>26</span>
                 <span class="block">London</span>
@@ -55,7 +43,7 @@
                 <h2>1.4K Photos</h2>
             </section>
         </main>
-        <footer class="">
+        <footer class="p-4">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"

@@ -434,6 +434,22 @@ video {
   display: none;
 }
 
+:root {
+  /* Primary */
+  --dark-cyan: 185 75% 39%;
+  --very-dark-desaturated-blue: 229 23% 23%;
+  --dark-grayish-blue: 227 10% 46%;
+  /* Neutral */
+  --dark-gray: 0 0% 59%;
+}
+
+body {
+  background-image: url(../images/bg-pattern-top.svg),
+            url(../images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-size: 50rem 50rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -534,26 +550,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.-left-96 {
-  left: -24rem;
-}
-
-.-top-96 {
-  top: -24rem;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -578,52 +574,12 @@ video {
   height: 100vh;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[32rem\] {
-  height: 32rem;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.max-h-96 {
-  max-height: 24rem;
-}
-
-.max-h-\[36rem\] {
-  max-height: 36rem;
-}
-
-.max-h-\[48rem\] {
-  max-height: 48rem;
-}
-
 .w-\[330px\] {
   width: 330px;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-\[32rem\] {
-  width: 32rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
 }
 
 .shrink-0 {
@@ -663,13 +619,13 @@ video {
   border-width: 4px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-dark-cyan {
+  background-color: hsl(var(--dark-cyan));
 }
 
 .bg-white {
@@ -677,28 +633,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/images\/bg-pattern-top\.svg\'\)\] {
-  background-image: url('../images/bg-pattern-top.svg');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-left {
-  background-position: left;
-}
-
-.bg-center {
-  background-position: center;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.font-kumbh-sans {
+  font-family: Kumbh Sans, sans-serif;
 }
 
 .shadow-lg {
